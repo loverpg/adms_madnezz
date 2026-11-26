@@ -111,12 +111,12 @@
 }
 
 .controle-recurso .resultado {
-    margin-top: 20px;
+    margin-top: -50px;
 }
 
 .controle-recurso .resultado > div {
-    margin-bottom: 8px;
     line-height: 1.5;
+    margin-top: -10px;
 }
 
 /* =====================================
