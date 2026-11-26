@@ -75,6 +75,9 @@ function calcularRecursos() {
 
 }
 
-document.addEventListener('DOMContentLoaded', calcularRecursos);
-
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', calcularRecursos);
+} else {
+    calcularRecursos();
+}
 
