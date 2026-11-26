@@ -101,6 +101,7 @@
 
 .controle-recurso {
     margin-top: -20px;
+    padding-bottom: 0;
 }
 
 .controle-recurso .lancamento {
@@ -109,11 +110,11 @@
     margin-top: -50px;
 }
 
-.resultado {
+.controle-recurso .resultado {
     margin-top: 20px;
 }
 
-.resultado > div {
+.controle-recurso .resultado > div {
     margin-bottom: 8px;
     line-height: 1.5;
 }
