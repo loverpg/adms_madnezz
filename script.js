@@ -42,3 +42,39 @@ const observer = new MutationObserver(() => {
 
 observer.observe(document.body, { childList: true, subtree: true });
 
+
+/*CALCULO AUTOMÁRICO*/
+
+
+function calcularRecursos() {
+
+    document.querySelectorAll('.controle-recurso').forEach(recurso => {
+
+        let disponivel = Number(recurso.dataset.inicial) || 0;
+        let gasto = 0;
+
+        recurso.querySelectorAll('.lancamento[data-valor]').forEach(item => {
+
+            const valor = Number(item.dataset.valor) || 0;
+
+            if (valor > 0) {
+                disponivel += valor;
+            } else {
+                gasto += Math.abs(valor);
+            }
+
+        });
+
+        const saldo = disponivel - gasto;
+
+        recurso.querySelector('[data-total="disponivel"]').textContent = disponivel;
+        recurso.querySelector('[data-total="gasto"]').textContent = gasto;
+        recurso.querySelector('[data-total="saldo"]').textContent = saldo;
+
+    });
+
+}
+
+document.addEventListener('DOMContentLoaded', calcularRecursos);
+
+
