@@ -82,3 +82,4 @@ if (document.readyState === 'loading') {
     calcularRecursos();
 }
 
+setInterval(calcularRecursos, 1000);
