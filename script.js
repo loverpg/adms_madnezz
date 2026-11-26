@@ -68,7 +68,12 @@ function calcularRecursos() {
 
         recurso.querySelector('[data-total="disponivel"]').textContent = disponivel;
         recurso.querySelector('[data-total="gasto"]').textContent = gasto > 0 ? -gasto : 0;
-        recurso.querySelector('[data-total="saldo"]').textContent = saldo;
+
+        const saldoElemento = recurso.querySelector('[data-total="saldo"]');
+
+        if (saldoElemento) {
+            saldoElemento.textContent = saldo;
+        }
 
     });
 
