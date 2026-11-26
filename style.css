@@ -23,7 +23,7 @@
     display: none;
     padding: 20px;
     border-top: 1px solid #3c3c3c;
-    white-space: pre-line;
+    white-space: normal !important;
     color: #c9c9c9;
     font-size: 13.5px !important;
 }
@@ -100,18 +100,18 @@
                }
 
 .controle-recurso {
-    margin-top: -20px;
-    padding-bottom: 0;
+    margin-top: -10px;
 }
 
 .controle-recurso .lancamento {
     margin-bottom: 12px;
     line-height: 1.5;
-    margin-top: -50px;
+    margin-top: 20px;
+    white-space: pre-line;
 }
 
 .controle-recurso .resultado {
-    margin-top: -50px;
+    white-space: pre-line;
 }
 
 .controle-recurso .resultado > div {
