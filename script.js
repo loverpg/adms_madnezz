@@ -47,7 +47,7 @@ observerMadnezz.observe(document.body, { childList: true, subtree: true });
 
 function calcularRecursos() {
 
-    document.querySelectorAll('.controle-recurso, .controle-niveis').forEach(recurso => {
+    document.querySelectorAll('.controle-recurso').forEach(recurso => {
         let disponivel = Number(recurso.dataset.inicial) || 0;
         let gasto = 0;
 
