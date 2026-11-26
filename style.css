@@ -99,6 +99,20 @@
   padding: 0px 8px 0px 0px;
                }
 
+.controle-recurso .lancamento {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.controle-recurso .resultado {
+    margin-top: 20px;
+}
+
+.controle-recurso .resultado > div {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
 /* =====================================
    RESPONSIVIDADE
 ===================================== */
