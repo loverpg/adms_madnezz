@@ -48,6 +48,7 @@ observerMadnezz.observe(document.body, { childList: true, subtree: true });
 function calcularRecursos() {
 
     document.querySelectorAll('.controle-recurso').forEach(recurso => {
+        console.log("Recurso encontrado:", recurso.dataset.categoria);
         let disponivel = Number(recurso.dataset.inicial) || 0;
         let gasto = 0;
 
