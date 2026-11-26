@@ -36,12 +36,11 @@ document.querySelectorAll('.tab-container').forEach(container => {
 
 document.addEventListener("DOMContentLoaded", iniciarAbas);
 
-const observer = new MutationObserver(() => {
+const observerMadnezz = new MutationObserver(() => {
   iniciarAbas();
 });
 
-observer.observe(document.body, { childList: true, subtree: true });
-
+observerMadnezz.observe(document.body, { childList: true, subtree: true });
 
 /*CALCULO AUTOMÁRICO*/
 
