@@ -61,7 +61,9 @@ function calcularRecursos() {
             } else {
                 gasto += Math.abs(valor);
             }
-
+            
+recurso.querySelector('[data-total="gasto"]').textContent =
+    gasto > 0 ? -gasto : 0;
         });
 
         const saldo = disponivel - gasto;
