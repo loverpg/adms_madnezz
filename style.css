@@ -64,6 +64,10 @@
     font-weight: bold;
 }
 
+.informacoes {
+    white-space: pre-line;
+}
+
 .gridded {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
