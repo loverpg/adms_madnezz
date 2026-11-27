@@ -64,8 +64,8 @@
     font-weight: bold;
 }
 
-.informacoes {
-    white-space: pre-line;
+.tab-content.informacoes {
+    white-space: pre-line !important;
 }
 
 .gridded {
