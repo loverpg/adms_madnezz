@@ -61,7 +61,18 @@ function calcularRecursos() {
             } else {
                 gasto += Math.abs(valor);
             }
-        
+            // TOTAL GERAL DE OURO
+    let ouroDisponivel = 0;
+    let ouroGasto = 0;
+
+    document.querySelectorAll('.controle-recurso[data-categoria]').forEach(recurso => {
+        ouroDisponivel += Number(recurso.querySelector('[data-total="disponivel"]').textContent) || 0;
+        ouroGasto += Math.abs(Number(recurso.querySelector('[data-total="gasto"]').textContent)) || 0;
+    });
+
+    document.querySelector('[data-ouro-total="disponivel"]').textContent = ouroDisponivel;
+    document.querySelector('[data-ouro-total="gasto"]').textContent = ouroGasto > 0 ? -ouroGasto : 0;
+    document.querySelector('[data-ouro-total="saldo"]').textContent = ouroDisponivel - ouroGasto;
         });
 
         const saldo = disponivel - gasto;
