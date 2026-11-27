@@ -1,16 +1,18 @@
-/* CÓDIGO CRIADO PARA USO EXCLUSIVO PARA FORUM MADNEZZ */
-.tab-container {
+
+/* CÓDIGO CRIADO PARA USO EXCLUSIVO PARA FÓRUM MADNEZZ */
+
+#adms-madnezz .tab-container {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
 }
 
-.tab-buttons {
+#adms-madnezz .tab-buttons {
     display: flex;
     justify-content: center;
 }
 
-.tab-buttons label {
+#adms-madnezz .tab-buttons label {
     margin: 0 10px;
     cursor: default;
     text-transform: uppercase;
@@ -19,7 +21,7 @@
     text-align: center;
 }
 
-.tab-content {
+#adms-madnezz .tab-content {
     display: none;
     padding: 20px;
     border-top: 1px solid #3c3c3c;
@@ -28,11 +30,11 @@
     font-size: 13.5px !important;
 }
 
-.tab-content.active {
+#adms-madnezz .tab-content.active {
     display: block;
 }
 
-.tab-content x {
+#adms-madnezz .tab-content x {
     padding: 7px;
     border: 1px solid #333;
     letter-spacing: 5px;
@@ -41,7 +43,7 @@
     font-size: 10px !important;
 }
 
-.tab-content y {
+#adms-madnezz .tab-content y {
     padding: 5px;
     border: 1px solid #333;
     letter-spacing: 5px;
@@ -52,73 +54,74 @@
     text-align: center;
 }
 
-.tab-content h1 {
-    font-family: canvas; 
-    font-size: 18px; 
-    text-transform: uppercase; 
-    color: #fff; 
+#adms-madnezz .tab-content h1 {
+    font-family: canvas;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
 }
 
-.tab-content b {
+#adms-madnezz .tab-content b {
     color: var(--cor-grupo);
     font-weight: bold;
 }
 
-.tab-content.informacoes {
+#adms-madnezz .tab-content.informacoes {
     white-space: pre-line !important;
 }
 
-.gridded {
+#adms-madnezz .gridded {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-column-gap: 55px;
     grid-row-gap: 35px;
 }
 
-.atributos {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr); 
-  gap: 10px; 
+#adms-madnezz .atributos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
 }
 
-.atributos .spacer {
-  visibility: hidden;
+#adms-madnezz .atributos .spacer {
+    visibility: hidden;
 }
-.tab-content td {
+
+#adms-madnezz .tab-content td {
     vertical-align: top;
     width: 30%;
     overflow-wrap: break-word;
     text-align: left;
 }
 
-.tab-content table {
+#adms-madnezz .tab-content table {
     border-collapse: collapse;
     border-spacing: 0;
     table-layout: fixed;
     width: 100%;
 }
 
-.tab-content t {
-  border-bottom: 2px solid var(--cor-grupo); 
-  padding: 0px 8px 0px 0px;
-               }
+#adms-madnezz .tab-content t {
+    border-bottom: 2px solid var(--cor-grupo);
+    padding: 0px 8px 0px 0px;
+}
 
-.controle-recurso {
+#adms-madnezz .controle-recurso {
     margin-top: -10px;
 }
 
-.controle-recurso .lancamento {
+#adms-madnezz .controle-recurso .lancamento {
     margin-bottom: 12px;
     line-height: 1.5;
     margin-top: 20px;
     white-space: pre-line;
 }
 
-.controle-recurso .resultado {
+#adms-madnezz .controle-recurso .resultado {
     white-space: pre-line;
 }
 
-.controle-recurso .resultado > div {
+#adms-madnezz .controle-recurso .resultado > div {
     line-height: 1.5;
     margin-top: -10px;
 }
@@ -128,6 +131,7 @@
 ===================================== */
 
 @media (max-width: 1200px) {
- .tab-buttons {
-  font-size: 10px;
+    #adms-madnezz .tab-buttons {
+        font-size: 10px;
+    }
 }
